@@ -7,14 +7,10 @@ public class LC1572DiagonalSum {
 
         for (int i = 0; i < mat.length; i++) {
             len--;
-            if (i == len) {
-                sum += mat[i][i];
-
-            } else {
-                sum += mat[i][i];
+            sum += mat[i][i];
+            if(i != len){
                 sum += mat[i][len];
             }
-
         }
         return sum;
     }
