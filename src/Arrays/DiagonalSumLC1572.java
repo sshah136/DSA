@@ -1,6 +1,6 @@
 package Arrays;
 
-public class LC1572DiagonalSum {
+public class DiagonalSumLC1572 {
     public int diagonalSum(int[][] mat) {
         int sum = 0;
         int len = mat.length;
