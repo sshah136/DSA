@@ -9,9 +9,9 @@ public class MergeSortedArrayLC88 {
 
         while(i>=0 && j>=0){
             if(nums1[i]>=nums2[j]){
-                nums1[k--] = nums1[i--];
+                nums1[k--] = nums1[i--];// break condition using decrement operator
             }else{
-                nums1[k--] = nums2[j--];
+                nums1[k--] = nums2[j--];// break condition using decrement operator
             }
         }
 
@@ -21,6 +21,7 @@ public class MergeSortedArrayLC88 {
 
         while(j>=0){// All elements of nums1 have been added
             nums1[k--] = nums2[j--];
+
         }
     }
 }
